@@ -6,18 +6,18 @@ const Body = Matter.Body;
 
 var ball, ground;
 function setup() {
-	createCanvas(800, 400);
+	createCanvas(1600, 400);
 
 	engine = Engine.create();
 	world = engine.world;
 
-	ball = new Paper(100, height-20, 20,PI/2)
+	ball = new Paper(400, height-20, 40,PI/2)
 	//Create the Bodies Here.
 	ground = new Ground(width/2, height - 10, width, 20)
 
-	left = new Dustbin(608,345,15,60);
-	right = new Dustbin(743,345,15,60);
-	bottom = new Dustbin(675,375,150,15)
+	left = new Dustbin(1208,345,15,60);
+	right = new Dustbin(1343,345,15,60);
+	bottom = new Dustbin(1275,375,150,15)
 
 
 
